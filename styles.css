@@ -76,7 +76,7 @@ body {
 
 .accordion {
   display: table-row;
-  border-bottom: 1px solid hsl(275, 100%, 97%);
+  /* border-bottom: 1px solid hsl(275, 100%, 97%); */
 }
 
 .accordion-cell {
@@ -100,6 +100,19 @@ body {
   font-weight: 600;
   width: 100%;
   font-size: 18px;
+
+  display: table-cell;
+}
+
+.faq-border-bottom {
+  display: block;
+  border-bottom: 1px solid hsl(275, 100%, 97%);
+  width: calc(100% - 80px);
+  margin: 0 auto;
+}
+
+.accordion:last-child .faq-border-bottom {
+  border-bottom: none;
 }
 
 .expand-accordion-icon {
