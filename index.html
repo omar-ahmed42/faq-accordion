@@ -6,10 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | FAQ accordion</title>
 </head>
-
 <body>
   <div class="background">
     <div class="faq-card">
@@ -19,12 +18,12 @@
       </div>
 
       <div class="accordion-list">
-        <div class="accordion">
+        <div class="accordion accordion-active">
           <div class="accordion-cell">
             <div class="accordion-question-wrapper">
               <div class="accordion-question">What is Frontend Mentor, and how will it help me?</div>
-              <div class="expand-accordion-icon">
-                <img src="assets/images/icon-minus.svg" alt="plus">
+              <div class="expand-accordion-icon accordion-active">
+                <img src="assets/images/icon-minus.svg" alt="minus">
               </div>
             </div>
             <div class="accordion-description">
@@ -44,6 +43,11 @@
               <div class="expand-accordion-icon">
                 <img src="assets/images/icon-plus.svg" alt="plus">
               </div>
+            </div>
+            <div class="accordion-description" style="display: none;">
+              Frontend Mentor offers realistic coding challenges to help developers improve their
+              frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+              all levels and ideal for portfolio building.
             </div>
           </div>
           <div class="faq-border-bottom"></div>
@@ -69,13 +73,17 @@
                 <img src="assets/images/icon-plus.svg" alt="plus">
               </div>
             </div>
+            <div class="accordion-description" style="display: none;">
+              Frontend Mentor offers realistic coding challenges to help developers improve their
+              frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+              all levels and ideal for portfolio building.
+            </div>
           </div>
           <div class="faq-border-bottom"></div>
         </div>
       </div>
-
     </div>
   </div>
+  <script src="accordion.js"></script>
 </body>
-
 </html>
